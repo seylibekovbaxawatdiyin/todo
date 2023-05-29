@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.auth-container {
+	@apply w-full min-h-screen bg-indigo-400 flex items-center justify-center;
+}
+
+.auth-container .register {
+	@apply w-[30%] p-6 rounded-md shadow-md bg-white flex flex-col gap-4;
+}
+
+.auth-container .register h1 {
+	@apply text-4xl font-semibold text-blue-800 text-center;
+}
+
+.auth-container .register input {
+	@apply px-5 py-3 rounded-md border-slate-300;
+}
+
+.auth-container .register button {
+	@apply px-5 py-4 rounded-md bg-indigo-500 text-white text-2xl transition duration-200 hover:bg-indigo-700 active:scale-90 active:opacity-70 disabled:opacity-40;
+}
+
+.auth-container .login {
+	@apply w-[30%] p-6 rounded-md shadow-md bg-white flex flex-col gap-4;
+}
+
+.auth-container .login h1 {
+	@apply text-4xl font-semibold text-blue-800 text-center;
+}
+
+.auth-container .login input {
+	@apply px-5 py-3 rounded-md border-slate-300;
+}
+
+.auth-container .login button {
+	@apply px-5 py-4 rounded-md bg-indigo-500 text-white text-2xl transition duration-200 hover:bg-indigo-700 active:scale-90 active:opacity-70 disabled:opacity-40;
+}
